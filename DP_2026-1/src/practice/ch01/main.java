@@ -3,6 +3,10 @@ package practice.ch01;
 import java.util.Iterator;
 public class Main {
     public static void main(String[] args) {
+
+        //무조건 앞에 내 학번과 이름 넣기
+        System.out.println("학번: 20240886 이름: 임수영");
+
         // 책 테스트
         Book book = new Book("Java Programming");
         System.out.println("Book name: " + book.getName());
@@ -25,7 +29,7 @@ public class Main {
         Iterator<Book> it = bookShelf.iterator();
         while (it.hasNext()) {
             Book b = it.next();
-            System.out.println(b.getName());
+            System.out.println("Book:" +b.getName());
         }
 
         //확장 for문을 이용한 방법
