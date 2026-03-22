@@ -1,4 +1,4 @@
-package ch01.Sample;
+package hw.ch01;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
