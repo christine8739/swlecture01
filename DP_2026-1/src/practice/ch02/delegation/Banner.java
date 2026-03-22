@@ -1,6 +1,6 @@
-package practice.ch02.inheritance;
+package practice.ch02.delegation;
 
-// 이미 존재하는 클래스, vender 클래스, 강아지(멍멍() 제공) , 수정할 수 없음
+//이미 제공되는 클래스
 public class Banner {
     private String string;
 
