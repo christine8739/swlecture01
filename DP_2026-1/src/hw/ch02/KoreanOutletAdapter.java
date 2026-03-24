@@ -15,3 +15,4 @@ public class KoreanOutletAdapter implements Charger {
         return koreanOutlet.provide();
     }
 }
+ 
