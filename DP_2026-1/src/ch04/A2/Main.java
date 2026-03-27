@@ -13,5 +13,10 @@ public class Main {
         card1.use();
         card2.use();
         card3.use();
-    }
+        
+        // 시리얼 번호 100에 해당하는 오너 조회
+        IDCardFactory idCardFactory = (IDCardFactory) factory;
+        String owner = idCardFactory.getCardRegistry().get(100);
+        System.out.println("시리얼 번호 100의 오너: " + owner);
+    }   
 }
