@@ -2,6 +2,8 @@ package hw.ch03;
 
 public class Main {
     public static void main(String[] args) {
+        //무조건 앞에 내 학번과 이름 넣기
+        System.out.println("학번: 20240886 이름: 임수영");
         //**[3-1] 기본 테스트** -기존 코드 호환성 확인
         AbstractDisplay d1 = new CharDisplay('H');
         AbstractDisplay d2 = new StringDisplay("Hello");
