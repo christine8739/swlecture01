@@ -5,9 +5,9 @@ public class Main {
     public static void main(String[] args) {
         //무조건 앞에 내 학번과 이름 넣기
         System.out.println("학번: 20240886 이름: 임수영");
-         //KoreanOutletAdapter 생성
+         //KoreanOutletAdapter 생성,KoreanOulet 을 밖에서 만들고 
         KoreanOutlet koreanOutlet = new KoreanOutlet();
-        //KoreanOutletAdapter 생성-provide()를 charge()로 변환
+        //KoreanOutletAdapter 생성-provide()를 charge()로 변환,어댑터에 주입
         Charger charger = new KoreanOutletAdapter(koreanOutlet);
         //Smartphone 에 전달
         Smartphone smartphone = new Smartphone(charger);
