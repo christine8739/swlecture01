@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
          //무조건 앞에 내 학번과 이름 넣기
         System.out.println("학번: 20240886 이름: 임수영");
+        System.out.println("동일한 인스턴스,다른인스턴스 체크할때 브이표시와 엑스표시가 구현이 되지 않아서 텍스트로만 표현합니다");
         //[2-1] Static Initializer 테스트
         //-getINstance()로 인스턴스 얻어서 로그 기록,두번 호출해서 같은 인스턴스인지 확인
         System.out.println("========== 방식 1: Static Initializer ==========");

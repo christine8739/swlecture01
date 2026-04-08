@@ -24,7 +24,7 @@ public class BookShelf implements Iterable<Book> {
     }
 
     @Override
-    public Iterator<Book> iterator() { //자기 자신(현쟈 챶꽂이)의 iterator를생성해서  반환하는 메소드
+    public Iterator<Book> iterator() { //자기 자신(현재 책꽂이)의 iterator를생성해서  반환하는 메소드
         return new BookShelfIterator(this); //this : 현재 객체(책꽂이)를 가리킴 
     }
 }
