@@ -6,14 +6,15 @@ public class LoggerSynchronizedLazy {
     //로그 메시지를 누적해서 저장하는 버퍼
     private StringBuilder logBuffer;
 
-    //외부에서 인스턴스를 얻는 유일한 방법
+    
     //synchronized: 여러 스레드가 동시에 이 메서드에 들어오지 못하도록 잠금
     //->instance 가 중복 생성되는 것을 방지
     private LoggerSynchronizedLazy(){
         System.out.println("[LoggerSynchronizedLazy] 인스턴스를 생성했습니다");
         logBuffer = new StringBuilder();
     }
-
+    
+    //외부에서 인스턴스를 얻는 유일한 방법
     public static synchronized LoggerSynchronizedLazy getInstance(){
         if (instance == null){ // 이 인스턴스가 없으면 
             instance = new LoggerSynchronizedLazy(); //그때 처음 생성
