@@ -36,7 +36,7 @@ public enum Hand {
     // this가 h보다 약할 때 true
     public boolean isWeakerThan(Hand h) {
         return fight(h) == -1;
-    }
+    } 
 
     // 무승부는 0, this가 이기면 1, h가 이기면 -1
     private int fight(Hand h) {
