@@ -12,7 +12,10 @@
     "editor.inlineSuggest.enabled": true,
     "editor.suggestSelection": "first",
     "github.copilot.enable": {
-        "*": false
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
     },
     "github.copilot.inlineSuggest.enable": true 
 }

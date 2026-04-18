@@ -16,7 +16,11 @@ public class Main {
         System.out.println("s3의 값: " + s3);
 
         //singleton2 사용하기
-        Singleton2 s4 = Singleton2.INSTANCE; // Singleton2 객체 얻기
+        Singleton2 s4 = Singleton2.INSTANCE1; // Singleton2 객체 얻기
+        Singleton2 s5 = Singleton2.INSTANCE2; // Singleton2 객체 얻기
+        Singleton2 s6 = Singleton2.INSTANCE3; // Singleton2 객체 얻기
         s4.hello(); // 싱글톤 객체의 hello 메소드 호출
+        s5.hello(); // 싱글톤 객체의 hello 메소드 호출
+        s6.hello(); // 싱글톤 객체의 hello 메소드 호출
     }
 }
