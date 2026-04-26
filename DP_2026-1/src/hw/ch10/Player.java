@@ -1,21 +1,21 @@
-package practice.ch10;
+package hw.ch10;
 
 public class Player {
     private String name;
-    private Strategy strategy; // 부모 타입-> 모든 종류의 자식 전략 객체를 가리킬 수 있다. -> 교체가 쉬움-> 다형성
+    private Strategy strategy;
     private int wincount;
     private int losecount;
     private int gamecount;
 
     // 이름과 전략을 받아서 플레이어를 만든다 
-    public Player(String name, Strategy strategy) { // 부모 타입
+    public Player(String name, Strategy strategy) {
         this.name = name;
         this.strategy = strategy;
     }
 
     // 전략에 따라 다음 손을 결정한다
     public Hand nextHand() {
-        return strategy.nextHand(); //전략 객체에게 위임함
+        return strategy.nextHand();
     }
 
     // 승리
@@ -34,7 +34,7 @@ public class Player {
 
     // 무승부 
     public void even() {
-        gamecount++; // 무승부는 학습하지 않음
+        gamecount++;
     }
 
     @Override

@@ -22,8 +22,8 @@ public class Main {
 
         // 게임 시키기
         for (int i =0; i<10; i++){
-            Hand h1 = player1.nextHand();
-            Hand h2 = player2.nextHand();
+            Hand h1 = player1.nextHand(); // player1이 다음에 낼 손을 결정한다. player1의 전략 객체에게 nextHand()를 호출하여 다음에 낼 손을 결정한다.
+            Hand h2 = player2.nextHand(); // player2가 다음에 낼 손을 결정한다. player2의 전략 객체에게 nextHand()를 호출하여 다음에 낼 손을 결정한다.
 
             // 손을 대결시킴
             if (h1.isStrongerThan(h2)) {

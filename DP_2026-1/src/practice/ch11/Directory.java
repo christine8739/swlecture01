@@ -3,16 +3,16 @@ package practice.ch11;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Directory extends Entry {
+public class Directory extends Entry { // Entry는 부모타입, Directory는 자식타입
     private String name;
     private List<Entry> directory = new ArrayList<>(); // 자식을 보관하는 리스트; Entry : 부모타입( Dirextory와 FIle 모두를 담을 수 있음)
 
-    public Directory(String name) {
+    public Directory(String name) { // 디렉터리 이름을 설정한다
         this.name = name;
     }
 
     @Override
-    public String getName() {
+    public String getName() { // 디렉터리의 이름을 반환한다
         return name;
     }
 

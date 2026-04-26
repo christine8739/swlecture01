@@ -3,7 +3,9 @@ package practice.ch03;
 public class Main {
     public static void main(String[] args) {
        // CharDisplay d1 = new CharDisplay('H'); // 'H', 'H' -부모 타입으로 해도 상관없음(밑에 있는 추상클래스)
-       AbstractDisplay d1 = new CharDisplay('H'); // 'H', 'H'
+       AbstractDisplay d1 = new CharDisplay('H'); // 'H', 'H' // LSP: 부모 타입으로 해도 자식 클래스의 메소드를 사용할 수 있다. 
+       // - 추상 클래스는 구체적인 구현이 없는 클래스이기 때문에, 부모 타입으로 선언해도 자식 클래스의 메소드를 사용할 수 있다.
+
        d1.display();
        d1.open();
 

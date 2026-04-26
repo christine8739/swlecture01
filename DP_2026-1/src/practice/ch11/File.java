@@ -11,12 +11,12 @@ public class File extends Entry {
 
     
     @Override
-    public String getName() {
+    public String getName() { // 파일의 이름을 반환한다
         return name;
     }
 
     @Override
-    public int getSize() {
+    public int getSize() { // 파일의 크기를 반환한다
         return size;
     }
 

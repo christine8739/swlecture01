@@ -5,7 +5,7 @@ import practice.ch06.framework.Product;
 public class MessageBox implements Product {
     private char decochar;
 
-    public MessageBox(char decochar) {
+    public MessageBox(char decochar) { // 장식 문자 설정
         this.decochar = decochar;
     }
 

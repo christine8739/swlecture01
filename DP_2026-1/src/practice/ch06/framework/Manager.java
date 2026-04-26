@@ -7,11 +7,12 @@ import java.util.Map;
 public class Manager {
     // product: 부모 타입
     private Map<String,Product> showcase = new HashMap<>();//(key,value) 쌍으로 저장하는 Map
-
+    // register(): product를 등록하는 메소드
+    // create(): 등록된 product를 복제해서 제공하는 메소드
     public void register(String name, Product prototype) {
         showcase.put(name, prototype); // (key,value) 쌍으로 저장하는 Map
     }
-
+    // create(): 등록된 product를 복제해서 제공하는 메소드
     public Product create(String prototypeName) {
         Product p = showcase.get(prototypeName); //(key)에 해당하는 value를 반환
         return p.createCopy(); //복제된 객체를 반환
